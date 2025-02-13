@@ -21,7 +21,7 @@ const game = () {
             option.addEventListener('click', function () {
 
                 const movesLeft = document.querySelector('.movesleft');
-                moves++;
+                moves + 3;
                 movesLeft.innerText = `Moves Left: ${10 - moves}`;
 
 
