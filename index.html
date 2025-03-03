@@ -1,82 +1,110 @@
-<!-- index.html -->
 
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, 
-                   initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/style.css">
     <title>Rock Paper Scissor</title>
-    <script></script>
+    <script src="" type="text/javascript">
+        
+    </script>
+    <style>
+    </style>
   </head>
   <body>
       <header>
         <div class="nav-container">
           <nav class="navbar">
             <ul>
-              <h2>Game Day</h2>
-              <li><a href="./index.html" class="active">Home</a></li>
-              <li><a href="./html/about.html">About</a></li>
-              <li><a href="./html/contact.html">Contact</a></li>
+              <h2 style="color: White;"><img url="https://www.freepik.com/free-vector/letter-m-luxury-logo-concept-design_17565105.htm#from_view=detail_alsolike" alt="" width="30" height="30"/>Game Day</h2>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
           </nav>
         </div>
       </header>
+      <!--Title -->
+          <div class="title">The Rock Paper Scissors Game</div> 
       <main>
-        <section class="game">
-        <!--Title -->
-          <div class="title">The Rock Paper Scissors Game</div>
-        
-          <!--Display Score of player and computer -->
-            <div class="score">  
-              <div class="playerScore">
-                <h2>Player</h2>
-                <p class="p-count count">0</p>
+        <section style="margin-bottom: 50px;" class="Home" id="home">
+          <h3 class="heading" style="text-align: center; margin-top: 10px">Home</h3>
+          <h1 style="text-align: center; font-size: 28px; margin: 10px 15px;">
+    Game!
+  </h1>
+    <div class="display-container">
+      <div class="box1" id="demopara">
+        <div class="">
+          <p >Player Choice</p>
+          <div id="display"></div>
+        </div>
+        <div class="">
+          <p>Computer Choice</p>
+          <p id="display1"></p>
+        </div>
+        <div class="">
+          <p>Results</p>
+          <p id="demo">demo</p> 
+        </div>
+        <div class="">
+          <p>Round Winner</p>
+          <p id="result">Demo1</p>
+        </div> 
+    </div>
+    <div class="box2" id="demopara2">
+      <div class="">
+        <p >Round Number</p>
+        <div id="display5"></div>
+      </div>
+      <div class="">
+        <p>Player Score</p>
+        <div id="display6"></div>
+      </div>
+      <div class="">
+        <p>Computer Score</p>
+        <div id="demo5">demo</div>
+      </div>
+      <div class="">
+        <p>Game Winner</p>
+        <div id="finalResult">Demo1</div>
+      </div> 
+    </div>
+  <button id="btn1" onclick="myFunctionOneTwo()">Start Button</button>
 
-              </div>       
-              <div class="computerScore">
-                <h2>Computer</h2>
-                <p class="c-count count">0</p>
+        </section>
+        
+          <section style="font-size: 16px; color: white;" class="about" id="about">
+            <h3 style="color: blue; margin-bottom: 25px;">About</h3>
+            <p style="margin: 25px 10px; color:">
+      Rock, paper, scissors (also known as Rochambeau, Roshambo, or Janken) is a fun and easy hand game that anyone can learn and enjoy.
+      It’s a great way to make minor decisions when you and a friend can’t agree on something, or even just an entertaining way to pass the time.
+      jThe neat thing about the game is that almost anybody can pick the rules up in a matter of seconds. In this article, we’ll break the game down so that you and a friend can play whenever you’d like.</p>
 
-              </div>
-            </div>
-      
-          <div class="move">Choose your move</div>
-        
-          <!--Number of moves left before game ends -->
-          <div class="movesleft">Moves Left: 10 </div>
-        
-          <!--Options available to player to play game -->
-          <div class="options">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissor">Scissors</button>    
-          </div>
-        
-          <!--Final result of game -->
-          <div class="result"></div>
-        
-          <!--Reload the game -->
-          <button class="reload"></button>
-
-        </section>  
+    <h3 style="margin: 25px 10px">Things You Should Know</h3>
+    <p style="margin: 25px 10px">
+      <ol style="margin-left: 100px">
+        <li>Rock beats scissors</li>
+        <li>scissors beat paper</li>
+        <li>paper beats rock</li>
+      </ol>
+       Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
+    </p>
+          </section>    
       </main>
       <footer>
           <div class="nav-container">
           <nav class="navbar">
             <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./html/about.html">About</a></li>
-              <li><a href="./html/contact.html">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
               <li>&COPY 2025 Andrew James</li>
             </ul>
           </nav>
         </div> 
       </footer>
-    
+    <script type="text/javascript">
 
-    <script src="scripts/index.js" type="text/javascript"></script>
+    </script>
   </body>
 </html>
